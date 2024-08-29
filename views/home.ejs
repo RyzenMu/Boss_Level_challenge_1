@@ -1,0 +1,23 @@
+<%- include partials/header.ejs %>
+
+    <h1>Home</h1>
+    <% 
+        posts.forEach(function(post) {
+            
+        %>
+
+        <div>
+            <h1>
+                <%= post.postTitle %>
+            </h1>
+            <p>
+                <%= _.truncate(post.postBody, {
+                    "length": 100
+                }) %>
+            </p>
+        </div>
+
+        <% }); %>
+
+
+            <%- include partials/footer.ejs %>
