@@ -29,7 +29,7 @@ app.get("/", function(req, res) {
     // for (i = 0; i < posts.length; i++) {
     //     postsString.push(posts[i].postTitle);
     // }
-    res.render("home", { posts: posts, _: _ });
+    res.render("home", { posts: posts, _: _ , startingContent : homeStartingContent});
     // console.log(posts);
 
 });
